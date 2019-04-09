@@ -21,7 +21,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
     volumes:
-      - mysql-data:/var/lib/mysql
+      - mysql-real_world_app:/var/lib/mysql
 
   adminer:
     image: adminer
@@ -45,4 +45,4 @@ services:
       - 6379:6379
 
 volumes:
-  postgres-data:
+  mysql-real_world_app:
