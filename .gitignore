@@ -1,0 +1,58 @@
+
+###> symfony/framework-bundle ###
+
+/.env.local
+/.env.local.php
+/.env.*.local
+/public/bundles/
+/var/
+/vendor/
+
+###< symfony/framework-bundle ###
+
+
+###> symfony/phpunit-bridge ###
+
+.phpunit
+/phpunit.xml
+
+###< symfony/phpunit-bridge ###
+
+
+###> symfony/web-server-bundle ###
+
+/.web-server-pid
+
+###< symfony/web-server-bundle ###
+
+
+###> for docker
+
+.idea/
+atlassian-ide-plugin.xml
+.idea_modules/
+*.iws
+cmake-build-*/
+
+###< for docker
+
+
+###> for docker
+
+!/docker/nginx/conf
+/docker/nginx/conf/*
+!/docker/nginx/conf/nginx.conf
+!/docker/nginx/conf/.gitkeep
+
+!/docker/nginx/log
+/docker/nginx/log/*
+
+!/docker/php
+/docker/php/*
+!/docker/php/Dockerfile
+!/docker/php/.gitkeep
+
+!/docker/mysql
+/docker/mysql/*
+
+###< for docker
